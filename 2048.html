@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>GAME</title>
+	<link rel="stylesheet" type="text/css" href="base.css">
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/1.1.0/annyang.min.js"></script>
+ <script>
+window.onload = function(){
+    if (annyang) {
+        var commands = {
+            'Hello': function() {
+                alert('Hi! I can hear you.');
+            }
+        };
+        annyang.addCommands(commands);
+        annyang.start(); 
+    }
+}
+</script>
+
+<script src="js/annyang.min.js"></script>
+</head>
+<body>
+		
+<div id = "overlay"></div>
+<div id = "box"> you won
+</div>
+
+
+<h1 id=heading >2048</h1>
+
+
+
+
+
+		<div class="upbox">
+		<div id = "statement"><b>Join The Adjacent Similar Tiles To Achieve 2048 Tile!</b>
+            <b>USE ARROW TO MOVE THE BLOCKS</b>
+            </div>
+			<div id ="buttondiv">
+			<div id="empty"></div>
+			<button id = "yo">NEW GAME</button>
+			</div>
+		</div>
+	<div id="main">
+ <main id="game" align = centre>
+            <div class="tile" id="tile00"></div>
+            <div class="tile" id="tile01"></div>
+            <div class="tile" id="tile02"></div>
+            <div class="tile" id="tile03"></div>
+            <div class="tile" id="tile10"></div>
+            <div class="tile" id="tile11"></div>
+            <div class="tile" id="tile12"></div>
+            <div class="tile" id="tile13"></div>
+            <div class="tile" id="tile20"></div>
+            <div class="tile" id="tile21"></div>
+            <div class="tile" id="tile22"></div>
+            <div class="tile" id="tile23"></div>
+            <div class="tile" id="tile30"></div>
+            <div class="tile" id="tile31"></div>
+            <div class="tile" id="tile32"></div>
+            <div class="tile" id="tile33"></div>
+        </main>
+
+</div>
+<div class = "upbox" id ="scorebox"><h1>Score: </h1></div>
+
+<script type="text/javascript" src="js/game.js"></script>
+<script>
+if (annyang) {
+  // Let's define our first command. First the text we expect, and then the function it should call
+  var commands = {
+   'show tps report': function() {
+      $('#tpsreport').animate({bottom: '-100px'});
+    }
+  };
+
+  // Add our commands to annyang
+  annyang.addCommands(commands);
+
+  // Start listening. You can call this here, or attach this call to an event, button, etc.
+  annyang.start();
+}
+</script>
+
+
+
+</body>
+</html>

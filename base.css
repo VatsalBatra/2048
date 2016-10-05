@@ -1,0 +1,75 @@
+.tile {
+    flex: 0 0 142px;
+    background-color: #CDC1B4;
+    margin: 6px 0;
+    border: 1px solid rgba(205, 193, 180, 0);
+    border-radius: 6px;
+    padding: 0;
+    width: 111px;
+    height: 91px;
+    display: -webkit-inline-box;
+        font-size: -webkit-xxx-large;
+        text-align: -webkit-center;
+    /* flex-wrap: wrap; */
+}
+#heading{
+	background-color: orange;
+	margin-top: initial;
+}
+button:hover{
+color: orange;	
+
+}
+div#buttondiv {
+  
+        padding: 16px;
+        display: flex;
+
+}
+
+#main {
+    background-color: rgb(187, 173, 160);
+    border: 2px solid #a1a1a1;
+    width: 468px;
+    margin: auto;
+    border-radius: 8px;
+}
+.yo{
+	height: 20px
+}
+div#empty {
+    width: 82%;
+}
+.upbox {
+    background-color: rgb(187, 173, 160);
+    border: 2px solid #a1a1a1;
+    width: 466px;
+    margin: auto;
+    border-radius: 8px;
+
+
+}
+#overlay {
+    /* background-color: green; */
+     display: none; 
+    position: fixed;
+    padding: 20%;
+    width: 59%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+#box {
+    display: hidden;
+    position: absolute;
+    background-color: green;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin: 141px 485px;
+      display: none; 
+
+}
+#scorebox{
+    font-size: -webkit-xxx-large;
+}
